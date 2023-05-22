@@ -12,3 +12,7 @@ class CommandInterface:
     def input_integer(self):
         integer2 = input("Enter first integer: ")
         return integer2
+    
+    # Print output
+    def answer(self, result):
+        print(result)
