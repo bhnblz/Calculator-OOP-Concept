@@ -5,4 +5,7 @@ class CommandInterface:
         operation = input("What operation do you need? [+ (addition), - (subtraction), * (multiplication), / (division)]: ")
         return operation
     # Ask for first integer
+    def input_integer(self):
+        integer1 = input("Enter first integer: ")
+        return integer1
     # Ask for second integer
