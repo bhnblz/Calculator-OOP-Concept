@@ -11,17 +11,13 @@ def evaluate():
     integer2 = ci.input_integer()
 
     if operation == "+":
-        result = integer1 + integer2
-        print(result)
+        result = calc.add(integer1, integer2)
     elif operation == "-":
-        result = integer1 - integer2
-        print(result)
+        result = calc.sub(integer1, integer2)
     elif operation == "*":
-        result = integer1 * integer2
-        print(result)
+        result = calc.mult(integer1, integer2)
     elif operation == "/":
-        result = integer1 / integer2
-        print(result)
+        result = calc.div(integer1, integer2)
 
     ci.answer(result)
 evaluate()
