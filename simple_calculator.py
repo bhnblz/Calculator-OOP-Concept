@@ -5,3 +5,4 @@ ci = CommandInterface()
 operation = ci.operation()
 
 integer1 = ci.input_integer()
+integer2 = ci.input_integer()

@@ -9,3 +9,6 @@ class CommandInterface:
         integer1 = input("Enter first integer: ")
         return integer1
     # Ask for second integer
+    def input_integer(self):
+        integer2 = input("Enter first integer: ")
+        return integer2
