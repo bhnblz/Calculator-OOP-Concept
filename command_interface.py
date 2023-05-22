@@ -25,3 +25,11 @@ class CommandInterface:
     # Print output
     def answer(self, result):
         print(result)
+    # Ask user if they want to solve again
+    def solve_again(self):
+        try_again = input("Do you want to solve another function? (y/n): ")
+        if try_again == "y":
+            return True
+        else:
+            print("Thank you!")
+            exit()

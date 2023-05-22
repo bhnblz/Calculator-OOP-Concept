@@ -6,6 +6,7 @@ calc = simpleCalculator()
 
 def evaluate():
     operation = ci.operation()
+    
     try: 
         integer1 = ci.input_integer()
         integer2 = ci.input_integer()
@@ -29,4 +30,8 @@ def evaluate():
         print(ci.invalid_op())
 
     ci.answer(result)
+
+    if ci.solve_again == True:
+        evaluate()
+
 evaluate()
