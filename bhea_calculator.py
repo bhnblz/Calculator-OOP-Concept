@@ -1,3 +1,6 @@
+# Nobleza, Bhea I.
+# BSCPE 1-4
+
 from Calculator import simpleCalculator
 # Child class
 class BheaCalculator(simpleCalculator):
