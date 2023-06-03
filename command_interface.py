@@ -5,7 +5,7 @@ from colorama import Fore
 class CommandInterface:
     # Ask for the operation
     def operation(self):
-        operation = input(Fore.LIGHTCYAN_EX + "\nWhat operation do you need? [+ (addition), - (subtraction), * (multiplication), / (division)]: ")
+        operation = input(Fore.LIGHTCYAN_EX + "\nWhat operation do you need? [+ (addition), - (subtraction), * (multiplication), / (division), ** (power), % (modulus)]: ")
         return operation
     # Ask for first integer
     def input_integer(self):

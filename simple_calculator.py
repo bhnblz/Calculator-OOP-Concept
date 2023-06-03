@@ -31,6 +31,10 @@ def evaluate():
         except ZeroDivisionError:
             print(ci.zeroDivisionError())
             return evaluate()
+    elif operation == "**":
+        result = bhea_calc.power(integer1, integer2)
+    elif operation == "%":
+        result = bhea_calc.modulus(integer1, integer2)
     else: 
         print(ci.invalid_op())
         return evaluate()
