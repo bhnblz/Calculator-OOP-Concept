@@ -2,10 +2,13 @@
 from command_interface import CommandInterface
 # Import simpleCalculator
 from Calculator import simpleCalculator
+# Import BheaCalculator
+from bhea_calculator import BheaCalculator
 
 # Create objects
 ci = CommandInterface()
 calc = simpleCalculator()
+bhea_calc = BheaCalculator()
 
 def evaluate():
     operation = ci.operation()
@@ -15,7 +18,7 @@ def evaluate():
     except ValueError:
         print(ci.invalid_input())
         return evaluate() 
-
+    
     if operation == "+":
         result = calc.add(integer1, integer2)
     elif operation == "-":
@@ -33,6 +36,7 @@ def evaluate():
         return evaluate()
     # Print the result
     ci.answer(result)
+    
     # ASk user if want to solve again, if not then exit the program
     if ci.solve_again() == True:
         evaluate()
